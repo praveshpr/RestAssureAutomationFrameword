@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="employeeSuite">
+	<listeners>
+		<listener class-name="com.au.xlUtility.Listeners" />
+	</listeners>
+	>
+	<test name="employeeTest">
+		<classes>
+
+			<class name="com.au.testCases.TC001_Get_All_Employees" />
+			<!-- <class name = "com.au.testCases.TC002_Get_Single_Employees" /> -->
+			<!-- <class name = "com.au.testCases.TC003_Post_Employee_record" /> -->
+			<!-- <class name = "com.au.testCases.TC004_Put_Employee_record" /> -->
+			<!-- <class name = "com.au.testCases.TC005_Delete_Employee_record" /> -->
+
+		</classes>
+
+	</test>
+</suite>

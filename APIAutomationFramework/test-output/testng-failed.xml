@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [employeeSuite]">
+  <listeners>
+    <listener class-name="com.au.xlUtility.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="employeeTest(failed)">
+    <classes>
+      <class name="com.au.testCases.TC001_Get_All_Employees">
+        <methods>
+          <include name="checkResponseTime"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+        </methods>
+      </class> <!-- com.au.testCases.TC001_Get_All_Employees -->
+      <class name="com.au.testCases.TC004_Put_Employee_record">
+        <methods>
+          <include name="checkBodyResponse"/>
+          <include name="updateEmployee"/>
+          <include name="setUp"/>
+          <include name="checkContentLength"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.au.testCases.TC004_Put_Employee_record -->
+      <class name="com.au.testCases.TC002_Get_Single_Employees">
+        <methods>
+          <include name="checkResponseTime"/>
+          <include name="getAllEmployees"/>
+          <include name="setUp"/>
+          <include name="checkServerType"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.au.testCases.TC002_Get_Single_Employees -->
+      <class name="com.au.testCases.TC005_Delete_Employee_record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkBodyResponse"/>
+          <include name="setUp"/>
+          <include name="updateEmployee"/>
+        </methods>
+      </class> <!-- com.au.testCases.TC005_Delete_Employee_record -->
+    </classes>
+  </test> <!-- employeeTest(failed) -->
+</suite> <!-- Failed suite [employeeSuite] -->
